@@ -1549,14 +1549,14 @@ The calculator has six 5-byte memories for holding temporary results. The follow
 | CB  | STOD3
 | CC  | STOD4
 | CD  | STOD5
-|
+|     |
 | D0  | STO0 | As above, but do not delete the last value after copying it.
 | D1  | STOl
 | D2  | STO2
 | D3  | STO3
 | D4  | STO4
 | D5  | STO5
-|
+|     |
 | D8  | RCL0 | Stack the value in calculator memory 0-5 on the FPCS
 | D9  | RCLl
 | DA  | RCL2
