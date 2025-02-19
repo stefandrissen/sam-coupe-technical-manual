@@ -2789,6 +2789,6 @@ When SAMDOS is loaded the ROM looks at its available memory and loads SAMDOS int
 
 ## New System Variable (ROM 1.2)
 
-|      |       |
+|      |       ||
 |------|-------|-
 | 5B70 | ANYIV | This address is jumped to when *any* interrupt occurs. Normally ANYIV contains the address of the ROM's interrupt handler (0049H). On entry to the address stored in ANYIV, the B register holds the LMPR state when the interrupt occurred, the C register holds the status port state 6-9 microseconds after the interrupt occured. The AF, BC and HL register pairs have been stacked with the values they had when the interrupt occured. The system variables (page 0) is paged in at 4000H. (This may have switched out the stack!) HL holds the contents of ANYIV. Your code will be entered 19-23 microseconds after the interrupt signal occured. <br><br> For example: <br><br> ``ld a,b`` <br> ``out (lmpr),a`` <br> ``pop hl`` <br> ``pop bc`` <br> ``pop af`` <br> ``ei`` <br> ``ret`` <br><br> No keyscan or other interrupt events will happen. Alternatively, JP back to 0049H (the ROM's interrupt handler), with the B register unchanged.
