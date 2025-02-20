@@ -22,7 +22,7 @@ Gary Thomas & Adrian Parker
 by Andy Graharn
 
 - With special Thanks to
-Bob Brenchley, Simon Goodwin, W.Ettrick Thomson, and Nev Young
+Bob Brenchley, Simon Goodwin, W. Ettrick Thomson, and Nev Young
 
 While every effort has been made to ensure that the contents of this manual are correct in every particular, it must be appreciated that MGT cannot guarantee that it is definitive since we have a policy of continual product enhancement.
 
@@ -34,7 +34,7 @@ While every effort has been made to ensure that the contents of this manual are 
 
 More and more hardware and software developers are working on SAM Coupé products.
 
-HGT is keen to support the efforts of developers. To this end we have created the MGT SAM Coupé Developers Group. For a fee of £50.00 we offer members of the Developers Group the following benefits:
+MGT is keen to support the efforts of developers. To this end we have created the MGT SAM Coupé Developers Group. For a fee of £50.00 we offer members of the Developers Group the following benefits:
 
 - Unlimited telephone support from our Software Engineers.
 - Unlimited telephone support from our Hardware Engineers.
@@ -245,7 +245,7 @@ Video Memory Page Register VMPR (252 dec). This connector is also used by the ne
 
 ## MIDI Out
 
-Standard 7 pin DIN type connector. By writing a data byte to the MIDI-OUT register (253 dec), the MIDI outputs a 7.5 mA current at 31.25 Kbaud. when transmitting, bit 1 of the PEN register (TXFMST of register 248 dec), is set. This OUTPUT can also be driven by bit 7 of the VMPR (252 dec). An internal through connection is made from MIDI IN to OUT by setting bit 6 THROM - through MIDI) of the BORDER register (254 dec). This connector is also used by the network, An interrupt is given on completion of the transmission of MIDI data.
+Standard 7 pin DIN type connector. By writing a data byte to the MIDI-OUT register (253 dec), the MIDI outputs a 7.5 mA current at 31.25 Kbaud. when transmitting, bit 1 of the PEN register (TXFMST of register 248 dec), is set. This OUTPUT can also be driven by bit 7 of the VMPR (252 dec). An internal through connection is made from MIDI IN to OUT by setting bit 6 THROM (through MIDI) of the BORDER register (254 dec). This connector is also used by the network, An interrupt is given on completion of the transmission of MIDI data.
 
 | Pin | Signal
 |-----|------------
@@ -2434,11 +2434,11 @@ Used by the PRINT A NUMBER routine:
 | DOSFLG   | 5BC2 |      | Zero if no DOS loaded, else page number containing DOS.
 | DOSCNT   | 5BC3 |      | Bit 0 is set if DOS is in control of the system.
 | BSTKEND  | 5BC4 | (2)  | End of Basic's stack (used by DO, GOSUB, procedures).
-| BASSTK   | 5BC4 | (2)  | Start of Basic's stack.
-| HEAPEND  | 5BC6 | (2)  | End of system heap.
-| HPST     | 5BC7 | (2)  | Start of system heap.
-| FPSBOT   | 5BCA | (2)  | Start of floating point calculator stack.
-| DKDEF    | 5BDC | (2)  | Start of KEYCODE definitions.
+| BASSTK   | 5BC6 | (2)  | Start of Basic's stack.
+| HEAPEND  | 5BC8 | (2)  | End of system heap.
+| HPST     | 5BCA | (2)  | Start of system heap.
+| FPSBOT   | 5BCC | (2)  | Start of floating point calculator stack.
+| DKDEF    | 5BCE | (2)  | Start of KEYCODE definitions.
 | DKLIM    | 5BD0 | (2)  | Limit address of KEYCODE buffer.
 | PATOUT   | 5BD2 | (2)  | Address of 'printable characters' output routine.
 | ERRMSGS  | 5BD4 | (2)  | Start of error message table.
