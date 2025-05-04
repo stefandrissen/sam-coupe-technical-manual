@@ -1582,7 +1582,7 @@ There are five types of tape files; Basic program, Machine Code, Numeric array, 
 
 Files are loaded at the correct speed automatically. Spectrum CODE file headers are converted into the SAM equivalent and then used to load the data block. Spectrum CODE files can be loaded into the Coupé as either CODE or SCREEN$ files by specifying this after the LOAD command. (The Coupé distinguishes SCREEN$ files from CODE files because they have to be loaded to screen memory, which can be anywhere in the memory map). Coupé CODE files can be forced to load as SCREEN$ files, and vice versa, simply by using LOAD "name" CODE or SCREEN$. CODE files can have an execution address.
 
-Altering the system variable TPROMPTS (SVAR 50) can turn off the prompt before SAVE, and/or the printing of file as names they are read from tape.
+Altering the system variable TPROMPTS (SVAR 51) can turn off the prompt before SAVE, and/or the printing of file as names they are read from tape.
 
 ## File Header Format
 
