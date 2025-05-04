@@ -13,7 +13,7 @@ It is MGT's policy that the SAM Coupé and associated MGT products should be ful
 All production machines contain ROM 1.0. This manual details information for ROM 1.0 and ROM 1.2. In the period April/May 1990 all Coupé owners will be issued with an enhanced ROM, issue 2.0, free of charge. The ROM 1.2 referred to in this manual is a pre-production version of ROM 2.0.
 
 - written by
-Bruce Gordon a Andy Wright
+Bruce Gordon & Andy Wright
 
 - With additional information by
 Gary Thomas & Adrian Parker
