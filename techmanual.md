@@ -19,7 +19,7 @@ Bruce Gordon & Andy Wright
 Gary Thomas & Adrian Parker
 
 - Supplementary information on the use of the SAA1099 sound chip
-by Andy Graharn
+by Andy Graham
 
 - With special Thanks to
 Bob Brenchley, Simon Goodwin, W. Ettrick Thomson, and Nev Young
@@ -1213,7 +1213,7 @@ there:
     ret
 ````
 
-The method above corrupts HL and DE, but it can be adapted to use the alternate register set or IX or lY if desired.
+The method above corrupts HL and DE, but it can be adapted to use the alternate register set or IX or IY if desired.
 
 | Hex  |   |
 | ---: | - |
@@ -1780,7 +1780,7 @@ When certain codes come from the keyboard, a search is made to see if an expande
 
 ##### DEF KEYCODE
 
-``DEF KEYCODE 195: PRINT 123: PRINT "z"`` will cause any subsequent code of 195 corning from the keyboard to be expanded to: PRINT 123: PRINT "z"(ENTER). This makes: 123 z appear on the upper screen area. The entire line after DEF KEYCODE 195: is used. If a final colon is added to the line, the automatic (ENTER) is suppressed, for example:
+``DEF KEYCODE 195: PRINT 123: PRINT "z"`` will cause any subsequent code of 195 coming from the keyboard to be expanded to: ``PRINT 123: PRINT "z"``(ENTER). This makes: 123 z appear on the upper screen area. The entire line after ``DEF KEYCODE 195:`` is used. If a final colon is added to the line, the automatic (ENTER) is suppressed, for example:
 
 - ``DEF KEYCODE 193: PRINT "asd":``
 - would produce:
