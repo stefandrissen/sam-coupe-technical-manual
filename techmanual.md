@@ -12,7 +12,7 @@ It is MGT's policy that the SAM Coupé and associated MGT products should be ful
 
 All production machines contain ROM 1.0. This manual details information for ROM 1.0 and ROM 1.2. In the period April/May 1990 all Coupé owners will be issued with an enhanced ROM, issue 2.0, free of charge. The ROM 1.2 referred to in this manual is a pre-production version of ROM 2.0.
 
-- written by
+- Written by
 Bruce Gordon & Andy Wright
 
 - With additional information by
@@ -266,7 +266,7 @@ Standard 7 pin DIN type connector. This serial input, working at 31.25 Kbaud is 
 
 #### MIDI Out
 
-Standard 7 pin DIN type connector. By writing a data byte to the MIDI-OUT register (253 dec), the MIDI outputs a 7.5 mA current at 31.25 Kbaud. when transmitting, bit 1 of the PEN register (TXFMST of register 248 dec), is set. This OUTPUT can also be driven by bit 7 of the VMPR (252 dec). An internal through connection is made from MIDI IN to OUT by setting bit 6 THROM (through MIDI) of the BORDER register (254 dec). This connector is also used by the network, An interrupt is given on completion of the transmission of MIDI data.
+Standard 7 pin DIN type connector. By writing a data byte to the MIDI-OUT register (253 dec), the MIDI outputs a 7.5 mA current at 31.25 Kbaud. when transmitting, bit 1 of the PEN register (TXFMST of register 248 dec), is set. This OUTPUT can also be driven by bit 7 of the VMPR (252 dec). An internal through connection is made from MIDI IN to OUT by setting bit 6 (THROM - through MIDI) of the BORDER register (254 dec). This connector is also used by the network. An interrupt is given on completion of the transmission of MIDI data.
 
 |Pin| Signal     |
 |--:| ---------- |
@@ -284,7 +284,7 @@ When pressed, this button forces the CPU to address (0066H) where it is vectored
 
 #### Joystick
 
-Standard 9 pin 'D' type plug. The joystick interface has standard ATARI connections except that it has an extra strobe line for a second joystick together with a line carrying 5 volts. MGT will allow for dual joystick control with the second joystick having a special plug-socket connector. The joystick is read by the Keyboard port (254 dec) and overlays numeric keys 1 to 5 for second joystick and 6 to 0 for the first joystick.
+Standard 9 pin 'D' type plug. The joystick interface has standard ATARI connections except that it has an extra strobe line for a second joystick together with a line carrying 5 Volts. MGT will allow for dual joystick control with the second joystick having a special plug-socket connector. The joystick is read by the Keyboard port (254 dec) and overlays numeric keys 1 to 5 for second joystick and 6 to 0 for the first joystick.
 
 |Pin| Signal    |
 |--:| --------- |
@@ -328,11 +328,11 @@ It does not reset the colour look up table, the sound chip registers or the LINE
 
 #### Cassette Jack
 
-Standard 3.5mm mono jack socket. This is a bi-directional line. when outputting it should be connected to the MIC socket of a standard cassette tape recorder; when inputting it should be connected to the EAR socket of the recorder. It makes no difference to the Coupé if EAR and MIC are connected together, but only some tape recorders allow this, because of positive feedback.
+Standard 3.5mm mono jack socket. This is a bi-directional line. When outputting it should be connected to the MIC socket of a standard cassette tape recorder; when inputting it should be connected to the EAR socket of the recorder. It makes no difference to the Coupé if EAR and MIC are connected together, but only some tape recorders allow this, because of positive feedback.
 
 #### Light Pen & Audio Port
 
-Standard 5-pin, 180 degree, DIN type connector. This connector has a dual function of light-pen/gun input as well as stereo sound output capable at driving a HI-FI system on the AUX input.
+Standard 5-pin, 180 degree, DIN type connector. This connector has a dual function of light-pen/gun input as well as stereo sound output capable of driving a HI-FI system on the AUX input.
 
 |Pin| Signal             |
 |--:| ------------------ |
@@ -344,7 +344,7 @@ Standard 5-pin, 180 degree, DIN type connector. This connector has a dual functi
 
 #### Power Input
 
-Regulated DC input of 12 Volts at 200 milliamps and 5 Volts at 2 Amps. A fully loaded machine will have a power consumption of approximately 15 watts.
+Regulated DC input of 12 Volts at 200 milliamps and 5 Volts at 2 Amps. A fully loaded machine will have a power consumption of approximately 15 Watts.
 
 |Pin| Signal                   |
 |--:| ------------------------ |
@@ -398,7 +398,7 @@ The Coupé's Euroconnector is a standard 64 pin type with rows A-C fitted. It ha
 | 31A | BRIGHT   | 31C | GREEN 0            |
 | 32A | +5 VOLTS | 32C | 0 VOLTS            |
 
-when looking at the back of the Coupé's expansion connector, the pins are numbered as follows:
+When looking at the back of the Coupé's expansion connector, the pins are numbered as follows:
 
 | Euroconnector |  |
 | ------ | ------- |
@@ -429,7 +429,7 @@ For details of Z80B timing signals refer to any standard Z80 text. Please note t
 | SPEN       | 28A | Light pen signal (active high) which is normally low. When the light pen is touched to the screen and the raster passes the point of the pen, a positive going edge is received on this signal from the light pen socket. This causes the two registers LPEN and HPEN to contain the current x and y co-ordinates of the light pen, respectively. |
 | BLUE0      | 29A | BLUE0 is the second bit of the blue colour signal (see pin 25A for a full description). |
 | RED0       | 30A | RED0 is the second bit of the red colour signal (see pin 25A for a full description). |
-BRIGHT       | 31A | BRIGHT is the LSB (Least Significant Bit) of all colour signals (see pin 25A for a full description). |
+| BRIGHT     | 31A | BRIGHT is the LSB (Least Significant Bit) of all colour signals (see pin 25A for a full description). |
 | +5V        | 32A | +5 Volt supply rail, up to 250 mA available. |
 |            |     | |
 | IORQL      |  1C | Input/Output Request becomes active when the address bus contains a current port address from the processor. |
