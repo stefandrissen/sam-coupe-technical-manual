@@ -1491,7 +1491,7 @@ The three command codes below, along with DECB, use a displacement byte to skip 
 | Hex|         |   |
 | -: | ------- | - |
 | 1E | JPTRUE  | Jump by displacement given in next byte, if the last value is one. (The last value is discarded). |
-| 1F | JFFALSE | Jump by displacement given in next byte, if the last value is zero. (The last value is discarded). |
+| 1F | JPFALSE | Jump by displacement given in next byte, if the last value is zero. (The last value is discarded). |
 | 20 | JUMP    | Jump by displacement given in next byte. |
 
 The calculator has a special store called BREG that initially holds whatever the Z80's B register did when the calculator was called. The four command codes below use BREG.
@@ -2614,7 +2614,7 @@ Details of the Plus D header can be found in the technical information for the P
 
 ##### File Type
 
-Each file type in the SAMOOS is allocated a numeric identifier:
+Each file type in the SAMDOS is allocated a numeric identifier:
 
 |    |                   |         |
 | -: | ----------------- |-------- |
@@ -2627,7 +2627,7 @@ Each file type in the SAMOOS is allocated a numeric identifier:
 
 ##### Modulo Length & Number Of Pages
 
-In the SAMDOS header the length of the file is calculated by multiplying the number of pages (byte 7) by 16384 and adding the modulo length (word 1-2), LSB/MSE, i.e. the length MOD 16K.
+In the SAMDOS header the length of the file is calculated by multiplying the number of pages (byte 7) by 16384 and adding the modulo length (word 1-2), LSB/MSB, i.e. the length MOD 16K.
 
 ##### Offset Start & Starting Page Number
 
