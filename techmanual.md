@@ -2317,7 +2317,7 @@ The following variables point to the main sections of Basic's memory area. They 
 | WORKSP   | 5A91 | (2) | workspace start. |
 | ELINEP   | 5A93 |     | |
 | ELINE    | 5A94 | (2) | Edit line start. |
-| CHADP    | 5A95 |     | |
+| CHADP    | 5A96 |     | |
 | CHAD     | 5A97 | (2) | Current character address. |
 | KCURP    | 5A99 |     | |
 | KCUR     | 5A9A | (2) | Address of cursor in the edit line. |
