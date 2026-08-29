@@ -866,7 +866,7 @@ This read only register is mainly used for inputting the lower 5 bits of the key
 | 4 | K5   | keyboard matrix line 5, Mouse Right/Button 3. |
 | 5 | SPEN | light pen strobe/serial input bit.            |
 | 6 | EAR  | serial input from EAR of cassette recorder.   |
-| 7 | SOFF | status bit show if external memory is set.    |
+| 7 | SOFF | status bit that shows whether the screen has been disabled (1) |
 
 ##### **MIDI IN** register (253 dec)
 
