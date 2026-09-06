@@ -2187,7 +2187,7 @@ The following system variables are only used when the screen dump utility has be
 | DMPWID | 5A13 |     | Graphic dump width (in 8-fat pixel units; normally 32)
 | DMPWM  | 5A14 |     | Graphic dump width multiplier (1 for normal width, 2 or 3 for double or triple width).
 | DMPHM  | 5A15 |     | graphic dump height multiplier (1 for normal height, not 1 for double height).
-| GCM1   | 5A17 |     | Initial message sent to printers before a dump. The first byte is the number of characters to send. The normal values are 6,27,108,8,27,51,24,0,0 (2 bytes are spare).
+| GCM1   | 5A16 |     | Initial message sent to printers before a dump. The first byte is the number of characters to send. The normal values are 6,27,108,8,27,51,24,0,0 (2 bytes are spare).
 | GCM2   | 5A1F |     | Message sent to printers before each row is dumped. The first byte is the number of characters to send. The normal values are 5,13,10,27,42,4,0,0 (2 bytes are spare).
 | GCM3   | 5A27 |     | Final message sent to printers after a dump. The first byte is the number of characters to send. The normal values are 4,13,10,27,64,0 (1 byte is spare).
 | DMPTL  | 5A2D | (2) | Address in screen of top left corner for graphic dumps. (Usually 8000H).
