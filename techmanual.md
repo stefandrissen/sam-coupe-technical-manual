@@ -2255,7 +2255,7 @@ They are temporary versions of the variables listed above.
 | PFLAGT  | 5A50 | &nbsp;
 | M23PAPT | 5A51 | &nbsp;
 | M23INKT | 5A52 | &nbsp;
-| OVERT   | 5353 | &nbsp;
+| OVERT   | 5A53 | &nbsp;
 | INVERT  | 5A54 | &nbsp;
 | GOVERT  | 5A55 | &nbsp;
 
@@ -2284,7 +2284,7 @@ The next three variables are at 5AB1H, 5B70H and 5B71H in version 1.0 ROMs.
 |          | Hex  |     | &nbsp;
 | -------- | ---: | --- | ------
 | PRPOSN   | 5A70 |     | Current printer
-| Reserved | 5371 |     | &nbsp;
+| Reserved | 5A71 |     | &nbsp;
 | OPCHAR   | 5A72 |     | Used by ``LPRINT`` - character being printed.
 | DEVICE   | 5A73 |     | 0=upper window, 1=lower window, 2=printer, 3=other
 | CLET     | 5A74 |     | Current channel letter K/S/P/B/T/$ etc.
@@ -2365,7 +2365,7 @@ Temporary stores:
 
 |          | Hex  |     | &nbsp;
 | -------- | ---: | --- | ------
-| TEMPW1   | 53C8 | (2) | &nbsp;
+| TEMPW1   | 5AC8 | (2) | &nbsp;
 | TEMPW2   | 5ACA | (2) | &nbsp;
 | TEMPW3   | 5ACC | (2) | &nbsp;
 | TEMPB1   | 5ACE |     | &nbsp;
@@ -2437,7 +2437,7 @@ Table used by the editor showing which screen lines have line numbers.
 | BCREG    | 5B86 | (2)  | calculator's BC register.
 | AUTOFLG  | 5B88 |      | Zero if AUTO is off, else 1.
 | AUTOSTEP | 5B89 | (2)  | AUTO command's step value.
-| LSPTR    | 5B8E | (2)  | Line scan pointer used by the editor.
+| LSPTR    | 5B8B | (2)  | Line scan pointer used by the editor.
 | LNPTR    | 5B8D | (1)  | Used by the editor.
 | MSEDP    | 5B8E | (8)  | Used by the mouse as a data store.
 | BUTSTAT  | 5B8F |      | Mouse button status.
